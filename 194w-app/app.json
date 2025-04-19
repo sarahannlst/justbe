@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "194w-app",
+    "slug": "194w-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "jsEngine": "hermes",
+    "ios": {
+      "infoPlist": {
+        "NSAppTransportSecurity": { 
+          "NSAllowsArbitraryLoads": true,
+          "CFBundleAllowMixedLocalizations": true,
+          "NSExceptionDomains": {
+            "localhost": {
+              "NSIncludesSubdomains": true,
+              "NSTemporaryExceptionAllowsInsecureHTTPLoads": true
+            }
+          }
+        }
+      },
+      "supportsTablet": true,
+      "jsEngine": "jsc"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": ["expo-router"],
+    "scheme": "expo-router-test",
+    "fonts": [
+      {
+        "asset": "./assets/fonts/LexendDeca-Regular.ttf"
+      },
+      {
+        "asset": "./assets/fonts/LexendDeca-Bold.ttf"
+      }
+    ]
+  }
+}
